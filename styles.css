@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top-header{
+    width: 100%;
+    background-color: rgb(189, 180, 180);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+.loader{
+    display: flex;
+    column-gap: 5px;
+}
+.loader .dot{
+    height: 15px;
+    width: 15px;
+    /* background: rgb(59, 125, 125); */
+    border-radius: 50%;
+    animation: animate 5s infinite ease-in-out}
+
+    .loader .fst{
+    background-color: red;
+    animation-delay: .25s;
+}
+.loader .snd{
+    background-color: yellow;
+    animation-delay: .50s;
+}
+.loader .trd{
+    background-color: green;
+    animation-delay: .75s;
+}
+.loader .frth{
+    background-color: blue;
+    animation-delay: 1s;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(-5px);
+        transition: .3s;
+    }
+    100%{
+        transform: translateY(0);
+        transition: .5s;
+    }
+}
+.top-header .src-bar button{
+    padding: 5px 0px 5px 80px;
+    border: none;
+    border-radius: 5px;
+    color: gray;
+    font-weight: 100;
+}
+.top-header .src-bar .fa-rotate-right{
+    padding-left: 80px;
+    padding-right: 5px;
+}
+.top-header .sign{
+    background-color: rgb(159, 162, 161);
+    margin-bottom: -9px;
+    margin-right: -5px;
+    border-radius: 3px 0px 0px 0px;   
+}
+.top-header .sign i{
+    padding: 5px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    color: navy;
+}
+.header .logo h1{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.header .logo span{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0 5px;
+    border: 2px solid rgb(106, 103, 103);
+    border-radius: 50%;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+
+}
+.menu ul li{
+    list-style-type: none;
+    position: relative;
+    margin: 0px 30px;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    transition: .4s;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+.menu ul li a:hover{
+    color: red;
+    /* font-size: 20px; */
+}
+.menu ul li ul{
+    width: 180px;
+    text-align: left;
+    position: absolute;
+    top: 25px;
+    left: -15px;
+    background-color:  #bdb4b4;
+    display: none;
+    padding: 5px 10px;
+    border-radius: 5px; 
+    transition: .4s;
+    z-index: 1;
+}
+.menu ul li ul li{
+    width: 100%;
+    margin-left: 0;
+    padding: 10px 0;
+    text-align: left;
+    padding-left: 15px;
+}
+.menu ul li ul li a{
+    font-size: 12px;
+}
+.menu ul li:hover ul{
+    display: block;
+}
+.header .icon i{
+    padding-left: 10px;
+}
+/* --------slider----- */
+.slider .img{
+    width: 100%;
+    display: flex;
+    position: relative;
+    position: relative;
+    animation-name: animate;
+    animation-duration: 15s;
+    animation-range-start: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+@keyframes animate{
+    0%{
+        left: 0;
+    }
+    75%{
+        left: 0;
+     }
+    100%{
+        left: 100%;
+    }
+}
+.slider .img img{
+    width: 450px;
+    padding: 5px;
+    border-radius: 5px;
+}
+/* ------section-1----- */
+.section-1{
+    display: flex;
+    align-items: center;
+    padding: 100px;
+}
+.section-1 .left{
+    padding: 30px 60px;
+}
+.section-1 .left h1{
+    font-size: 50px;
+    color: #1e1c1c; 
+    line-height: 50px;   
+}
+.section-1 .left p{
+    font-size: 18px;
+    text-align: justify;
+    color: gray;
+    padding: 10px 80px 10px 0px;
+}
+.section-1 .left button{
+    margin-top: 80px;
+    padding: 18px 30px;
+    border: none;
+    background-color: #f42f2c ;
+    border-radius: 5px;
+    transition: .4s;
+    cursor: pointer;
+}
+.section-1 .left button a{
+    text-decoration: none;
+    color: white;
+    transition: .4s;
+}
+.section-1 .left button:hover{
+    background-color: white;
+    border: #f42f2c 1px solid;
+}
+.section-1 .left button:hover a{
+    color: #f42f2c;
+}
+/* ..... section.2.......... */
+.section-2{
+    display: flex;
+    /* align-items: center; */
+    padding: 40px 80px;
+}
+.section-2 .left{
+    margin-left: -50px;
+}
+.section-2 .left img{
+    width: 650px;
+}
+.section-2 .right{
+    padding-left: 150px;
+}
+.section-2 .right h1{
+    font-size: 50px;
+    color: rgb(30, 28, 28); 
+    line-height: 50px;   
+}
+.section-2 .right p{
+    font-size: 18px;
+    text-align: justify;
+    color: gray;
+    padding: 10px 80px 10px 0px;
+}
+.section-2 .right button{
+    margin-top: 60px;
+    padding: 18px 30px;
+    border: none;
+    background-color: #f42f2c ;
+    border-radius: 5px;
+    transition: .4s;
+    cursor: pointer;
+}
+.section-2 .right button a{
+    text-decoration: none;
+    color: white;
+    transition: .4s;
+}
+.section-2 .right button:hover{
+    background-color: white;
+    border: 1px solid #f42f2c;
+}
+.section-2 .right button:hover a{
+    color: #f42f2c;
+}
+
+/* -----section-3------ */
+.section-3{
+    padding: 50px;
+}
+.section-3 h1{
+    font-size: 50px;
+    color: rgb(30, 28, 28); 
+    text-align: center;
+}
+.section-3 h4{
+    color: rgb(30, 28, 28); 
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+}
+.section-3 .flexbox{
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 30px;
+}
+.section-3 .flexbox .left h1{ 
+    text-align: left;
+    font-family: monospace;
+}
+.section-3 .flexbox .left p{
+    padding-right: 60px;
+    color: gray;
+    font-size: 18px;
+}
+.sub-sec{
+    display: flex;
+    padding: 35px 0;
+}
+ /* -------section-4------ */
+.section-4{
+    display: flex;
+    padding: 0 80px;
+    position: relative;
+    animation-name: animate;
+    animation-duration: 15s;
+    animation-range-start: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+@keyframes animate{
+    0%{
+        left: 0;
+    }
+    50%{
+        left: 0;
+    }
+    100%{
+        left: 100%;
+    }
+}
+.section-4 img{
+    padding: 0 50px;
+}
+.section-4 .right{
+    padding: 50px;
+
+}
+.section-4 .right h1{
+    font-size: 50px;
+    color: #1e1c1c;
+}
+.section-4 .right p{
+    font-size: 22px;
+    color: #726b6b;
+    padding: 5px 0;
+}
+.section-4 .right .text{
+    font-size: 18px;
+}
+/* ----------section-5----- */
+.section-5{
+    padding: 100px;
+    display: flex;
+}
+.section-5 .right{
+    padding: 20px 100px;
+}
+.section-5 .right h1{
+    font-size: 40px;
+    color: #1e1c1c;
+}
+.section-5 .right p{
+    font-size: 18px;
+    color: #726b6b;
+    padding: 10px 0;
+}
+.section-5 .right form{
+    padding: 20px 0;
+}
+.section-5 .right form input{
+    padding: 10px 290px 10px 10px;
+    text-align: left;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color:rgb(244, 244, 244);
+}
+.section-5 .right select{
+    padding: 10px 300px 10px 10px;
+    border-radius: 5px;
+    background-color:rgb(244, 244, 244);
+    color: #726b6b;
+}
+.section-5 .right button{
+    margin: 50px;
+    padding: 18px 30px;
+    border: none;
+    background-color: #f42f2c ;
+    border-radius: 5px;
+    transition: .4s;
+    cursor: pointer;
+    color: white;
+}
+.section-5 .right button:hover{
+    background-color: white;
+    color: #f42f2c;
+    border: #f42f2c solid 1px;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #04091f;
+    font-family: sans-serif;
+}
+.footer h1{
+    font-size: 30px;
+    color: #ffffff;
+}
+.footer p{
+    padding: 15px 0;
+}
+.footer p a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #726b6b;
+    transition: .4s;
+}
+.footer p a:hover{
+    color: #ffffff;
+}
+.footer .btn input{
+    padding: 10px 40px 10px 10px ;
+}
+.footer .btn a{
+    background-color: #bb2523;
+    padding: 11px;
+    color: white; 
+}
