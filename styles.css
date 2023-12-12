@@ -16,11 +16,12 @@
     column-gap: 5px;
 }
 .loader .dot{
-    height: 15px;
-    width: 15px;
+    height: 10px;
+    width: 10px;
     /* background: rgb(59, 125, 125); */
     border-radius: 50%;
-    animation: animate 5s infinite ease-in-out}
+    animation: animated 5s infinite ease-in-out
+}
 
     .loader .fst{
     background-color: red;
@@ -38,10 +39,10 @@
     background-color: blue;
     animation-delay: 1s;
 }
-@keyframes animate{
+@keyframes animated{
     0%{
         transform: translateY(-5px);
-        transition: .3s;
+        transition: .5s;
     }
     100%{
         transform: translateY(0);
